@@ -36,7 +36,7 @@ window.jQuery = function(nodeOrSelector){
         'content-type':'application/x-www-form-urlencoded',
         'frank': '18'
       },
-      successFn: (x)=>{
+      successFn: (x)=>{    //对象内调用外面的全局函数
         f1.call(undefined,x)
         f2.call(undefined,x)
       },
